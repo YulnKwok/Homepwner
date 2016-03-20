@@ -14,6 +14,8 @@ class Item:NSObject{
     var serialNumber:String?
     let dateCreated:NSDate
     
+    var itemStore:ItemStore!
+    
     init(name:String,valueInDollars:Int,serialNumber:String?) {
         self.name = name
         self.valueInDollars = valueInDollars
