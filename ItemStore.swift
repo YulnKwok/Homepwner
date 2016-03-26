@@ -11,12 +11,6 @@ import UIKit
 class ItemStore{
     var allItems = [Item]()
     
-    init(){
-        for _ in 0..<5{
-            creatItem()
-        }
-    }
-    
     func creatItem()->Item{
         let newItem = Item.init(random:true)
         allItems.append(newItem)
